@@ -71,6 +71,9 @@ class Game {
 
         if (index === player.index){
           cars[index - 1].shapeColor = "red";
+          textSize(30);
+          fill("red");
+          text(player.name,cars[index-1].x,displayHeight+100);
           camera.position.x = displayWidth/2;
           camera.position.y = cars[index-1].y;
         }
